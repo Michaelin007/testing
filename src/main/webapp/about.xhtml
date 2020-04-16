@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+    <h:head>
+        <h:outputScript library="js" name="dietj.js"/>
+       <h:outputStylesheet library="css" name="diet.css" /> 
+        <title> Ask Nutritionist/Dietitian </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+       
+    </h:head>
+    <h:body>
+        
+         <header>
+             <div id="hh">
+             <div id="nav">
+              <!--h:graphicImage url="/resources/images/ASN_logo2.png" id="logo"/-->
+              
+              <nav class="navbar">
+                  <span class="nav-toggle" id="js-navbar-toggle">
+                      <i class="fa fa-plus-circle"></i>
+                  </span>
+                  <a href="index.xhtml"><h:graphicImage url="/resources/images/logo3.png" id="logo"/></a>
+                 <ul class="main-nav" id="js-menu">
+                    
+                     <li><a href="index.xhtml" class="nav-links">Home</a></li>
+                     <li><a href="blog.xhtml" class="nav-links">Blog</a></li>
+                     <li><a href="about.xhtml" class="nav-links">Contact</a></li>
+                     <li><a href="about.xhtml" class="nav-links"> About </a></li>
+                 </ul>
+              </nav>
+              <div class="clear"></div>
+             </div>
+             </div>
+             
+         </header>
+    
+        <div id="container">
+            
+      
+        <div id="side">
+            <div id="ss">
+                <h2 style="font-size: 15px; font-family: Comic Sans MS;"><b>About</b></h2>
+                <p style="text-align: left; ">Ask a Clinical Nutritionist is a private web application own by Olayemi Michael a clinical nutritionist and a java developer,he hold a degree in nutrition
+                and dietetics from the ivory tower Federal University of Agriculture  Abeokuta,he designed this web application to help folks out there live healthy lifestyle. This platform provide a connection between a clinical nutritionists/
+                Dietitians and people out there who wish to improve their well being through nutrition. Every questions asked will be responded to with 48 hours
+                I and other experts of group will will respond to your questions. Our response will be directly sent to you e-mail.</p>
+                <p style="text-align: left; ">This platform will also celebrate experts in the field of Nutrition and Dietetics by listing them on our top 10 nutrition professionals of the month.
+                To get this slot, they must provide answer to our monthly critical question and this could improve their private practice.</p>
+                <p style="text-align: left; ">I really love nutrition and will be happy to help others achieve healthy lifestyle through Nutrition</p>
+                <p ><b>Olayemi Michael</b></p>
+                <p>Nutritionist and a Java developer</p>
+                  
+                 
+            </div>
+             </div>
+       
+         <h:form >
+            
+              
+              <div id="main">
+                  <div id="mcontent">
+                      <h2 style="font-size: 15px; font-family: Comic Sans MS;"><b> Terms and Condition</b></h2>
+                 
+            <p>
+                <p style="font-size: 12px; font-family: Comic Sans MS; text-justify:distribute">My name is <b>Olayemi Michael</b> a Clinical Nutritionist
+                I can help you to achieve healthy lifestyle through personalize nutrition.Use the Box below to ask your questions.You will get my response via your email in the next 48 hours
+                Nutrition : the foundation to healthy lifestyle </p>
+                
+              
+                <label>Name (First Last):</label>
+                <br/>
+                <input type="text" jsf:id="name" name="full_name" 
+                       placeholder="John Doe" value="#{askD.name}" 
+                       required="required" title="Enter your name."/>
+            </p>
+            <p>
+                <label>Email:</label>
+                <br/>
+                <input type="email" jsf:id="email" name="email" 
+                       value="#{askD.emailadd}" required="required"
+                       title="Enter email."/>
+            </p>
+           
+
+            <p>
+                <label>Enter Question :</label>
+                <br/>
+                <h:inputTextarea  cols="75" rows="6"
+                       value="#{askD.question}" required="required"
+                       title="Enter your question"/>
+            </p>
+                  Result : 
+                  <h:outputText value="#{askD.re}" id="muy"/><br/>
+                   <h:commandButton value="Send Question" actionListener="#{askD.sendmail}" action="index" >
+                       <f:ajax render="muy" execute="@form" />
+                     
+                   </h:commandButton><br/>
+                  <h:commandButton value="Clear" action="index" >
+                        <f:ajax render="@all" listener="#{askD.clear}"/>
+                     
+                   </h:commandButton>
+                  </div>
+              </div>
+            
+           
+
+           
+ 
+            
+        </h:form>
+            <div id="righside"> 
+                <div id="rg">
+                    <div class="rgi">
+                       <h2 style="font-size: 15px; font-family: Comic Sans MS;"><b>Privacy Policy </b></h2>
+                <p style="text-align: left; ">
+                    We collect and utilize the information that you provide to us voluntarily. The information will collect includes first name, last name, email and personal questions. 
+                    These information are utilize to serve you better. we use your information to contact you and deliver our response to you via your email. we shall not rent or sell your
+                    information into third parties outside Company Inc and its group companies (including any parent, subsidiaries and affiliates ) without your consent. Contact us by phone or email(askclinical@gmail)
+                    if you do not want us to collect or use your information, or if you would like us to delete the information that we have obtained: name, email, profession and personal questions. We take the security 
+                    of your personal information very seriously and can only be accessed by our team.
+                    If you feel that we are not following this privacy policy, or if you have concerns about how we're using your information, please contact us as soon as possible .
+ 
+                </p>
+                        <h2 style="font-size: 15px;"><b>Contacts</b></h2>
+                    <p style="font-size: 12px">Email:askacnutri@gmail.com</p>
+                    <p style="font-size: 12px"> Address:Abeokuta, Ogun State Nigeria</p>
+                <p style="font-size: 12px"> Telephone: +2348103428139</p>
+               
+               
+                </div>
+                </div>
+            </div>
+            
+        
+         </div>
+        <div id="container2">
+        <div id="footer">
+            <div id="footc">
+            <div id="foo">
+                <ul class="foot">
+                     <p style="font-size: 15px; color: black;"><b>Social Media Links</b> </p>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                     <li><a href="#" class="fa fa-instagram"></a></li>
+                     <li><a href="#" class="fa fa-pinterest"></a></li>
+                 </ul>
+                
+            </div>
+          
+                
+        </div>
+        </div>
+             <div id="contactf">
+            <div id="contact">
+                <div class="contm">
+                    <p style="font-size: 15px;"><b>Contacts</b></p>
+                    <p style="font-size: 12px">Email:askacnutri@gmail.com</p>
+                    <p style="font-size: 12px"> Address:Abeokuta, Ogun State Nigeria</p>
+                <p style="font-size: 12px"> Telephone: +2348103428139</p>
+                </div>
+            </div>
+          
+          </div>
+             <div id="cop">
+               <div class="reso">
+                   <p style="font-size: 15px;"><b>Resources</b> </p>
+                   <p style="font-size: 12px" ><a href="#" class="ree" style="text-decoration: none; color: black;">Our Team</a></p>
+                   <p style="font-size: 12px" ><a href="#" class="ree" style="text-decoration: none; color: black;">Privacy Policy</a></p>
+                   <p style="font-size: 12px" ><a href="#" class="ree" style="text-decoration: none; color: black;">Terms of Service</a></p>   
+                </div>
+           </div>
+        </div>
+       
+           
+            
+            <div id="copy">
+                    <p> Copyright 2020, Designed by Olayemi Michael </p>
+                </div>
+        
+        
+    </h:body>
+</html>

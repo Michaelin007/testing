@@ -1,0 +1,366 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 21, 2020, 11:27:41 AM
+    Author     : Michael
+*/
+
+
+input {
+   -moz-border-radius:6px;
+   -webkit-border-radius:6px;
+   border-radius:6px;
+   font-size:14px;
+   width:250px;
+   min-height:24px;
+}
+.selp{
+  -moz-border-radius:6px;
+   -webkit-border-radius:6px;
+   border-radius:6px;
+   font-size:14px;
+   width:250px;
+   min-height:24px;  
+}
+
+output {
+   font-size:14px;
+}
+
+body {
+     background-image: url(/bigg/resources/images/fru.jpg);
+    background-color:whitesmoke;
+    font-size: 14px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    color: #000000;  
+    margin: 10px;
+   
+    background-repeat: repeat; 
+    background-position: top left; 
+    background-attachment: fixed; 
+}
+
+h2 {
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #D20005;
+}
+/*#main{
+    float: left;
+    width: 60%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 30em;
+    overflow: auto;
+    
+}*/
+#maincon{
+    width:400px;
+    margin-right: 30%;
+    margin-left: 30%;
+    position:absolute;
+}
+textarea {
+   resize: none;
+    -moz-border-radius:6px;
+   -webkit-border-radius:6px;
+   border-radius:6px;
+   width:250px;
+     height: 100px;
+      font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+}
+header{
+    
+    border-bottom: 1px solid #AFAFAF;
+    background:#66ccff ;
+}
+/*#logo{
+    float:left;
+    display: inline-block;
+    width:200px;
+    height: 80px;
+     margin-right: 25%;
+    
+     
+}
+.clear{
+    clear:both;
+}
+
+    #nav{
+    
+        color:white;
+        width: 100%;
+        margin-right: 25%;
+    }
+    .nav>li{
+        margin-top: 2%;
+        margin-right: 5%;
+        display:inline-block;
+        color: blue;
+        font-size:14px;
+        padding: 5px 0px 5px 0px;
+    }
+    .nav>li>a:hover{
+    color:black;
+    }*/
+  /*  #side{
+float: left;
+width: 20%;
+height: 30em;
+overflow: auto;
+background-color: #EEEEEE;
+}
+  #righside{
+float: left;
+width: 16%;
+height: 30em;
+overflow: auto;
+background-color: #EEEEEE;
+}*/
+/*#footer {
+border: 1px black solid;
+float: left;
+width: 100%;
+clear: both;
+text-align: center;
+}*/
+@media(min-width:768px){
+    #container{
+    display:flex;
+    
+}
+#container2{
+    display:flex;
+    background-color: #66ccff;
+    
+}
+#blog{
+    display: flex;
+}
+/*#container3{
+    display: flex;
+    flex-direction: row;
+}*/
+
+    
+}
+
+#container div,#blog div  {
+    border: 0.5px #ccc solid;
+    padding:10px;
+}
+#container2{
+    
+    background-color: #66ccff;
+    
+}
+#side{
+    flex: 0 0 25%;
+    order: 1;
+    align-items: center;
+    flex-wrap: wrap;
+     
+}
+#main{
+    flex:0 0 30%;
+    order:2;
+    align-items: center;
+    flex-wrap: wrap;
+      
+}
+#rightside{
+    flex:0 0 25%;
+    order: 3;
+    align-items: center;
+    font:"Josefin Sans";
+    flex-wrap: wrap;
+    
+}
+#blogma{
+    flex:0 0 80%; 
+}
+#footer{
+    flex: 1;
+    order: 1;
+   
+    
+}
+#contactf{
+    flex:1;
+    order: 1;
+}
+#cop{
+    flex:1;
+    order: 2;
+}
+#foo{
+    text-align: left;
+        color:white;
+        width: 100%;
+        margin-right: 25%;
+       
+    }
+    .foot>li{
+        margin-top: 2%;
+        margin-right: 5%;
+        display:inline-block;
+        color: blue;
+        font-size:14px;
+        padding: 5px 0px 5px 0px;
+    }
+    .foot>li>a:hover{
+    color:black;
+    }
+    #rg{
+        
+       text-align: center;
+    }
+    #mcontent{
+       text-align: center; 
+    }
+    
+    #ss{
+      text-align: center;   
+    }
+  /*  #footc{
+        position: relative;
+        background-color: #7FDBFF; 
+    }
+    .contm{
+        flex: 1;    
+        order: 1; 
+        justify-content: center;
+        
+    }*/
+    /*.contm{
+        position: absolute;
+        right:60px;  
+    }*/
+    /* #resop{
+        flex: 1; 
+        order: 2;
+        justify-content: center; 
+        
+    }
+    #cop{
+        flex: 1;
+         justify-content: center; 
+    }*/
+    
+    #copy{
+        text-align: center;
+    }
+    #logi{
+    
+    width:500px;
+    height: 200px;
+    
+    
+     
+}
+ #loga{
+    
+    width: 300px;
+    height: 500px;
+    max-width: 100%;
+    height: auto;
+    
+    
+     
+}
+.navbar{
+    font-size: 18px;
+    
+    border: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 10px;
+
+}
+.main-nav{
+    list-style-type: none;
+    display: none;
+}
+.nav-links{
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+}
+.main-nav li{
+    text-align: center;
+    margin: 15px auto;
+}
+#logo{
+    display: inline-block;
+    width:200px;
+    height: 80px;
+     margin-right: 25%;
+}
+.nav-toggle{
+    position: absolute;
+    top:10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgba(255,255,255,0.8);
+        
+        
+}
+@media screen and (min-width:768px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height :70px;
+        align-items: center;
+    }
+    .main-nav{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li{
+        margin-left: 0px;
+    }
+    .nav-links{
+        margin-left: 40px;
+        color: black;
+    }
+    #logo{
+        margin-top: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    #logo:hover,.nav-links:hover{
+        color:rgba(255,255,255,1);
+    }
+}.rgi{
+  
+}
+#logo1{
+    width:20px;
+    height: 20px;
+     
+}
+#logo2{
+    width:20px;
+    height: 20px;
+     
+}
+.fa{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+    width: 50px;
+        
+}.ree:hover{
+  background-color:rgba(255,255,255,1);
+}
